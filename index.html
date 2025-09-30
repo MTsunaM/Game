@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Base</title>
+</head>
+<body>
+  <div class="container" role="main">
+    <h1>Meu Jogo</h1>
+    <p class="subtitle">Bem-vindo ao meu jogo!</p>
+
+    <label> Quantidade de numeros da sequencia </label>
+    <input type="number" id="total numeros" value="10" min="5" max="20"/>
+
+    <label> Quantidade de lacunas da sequencia </label>
+    <input type="number" id="total lacunas" value="3" min="1" max="10"/>
+
+    <div>
+      <button onclick="mostrarSequencia()">Gerar sequencia</button>
+      <button onclick="verificarRespostas()">Verificar sequencia</button>
+    </div>
+
+    <div id="sequencia" aria-live="polite" role="region" style="margin-top:20px;">
+        <!-- Sequencia gerada aparece aqui -->
+    </div>
+
+    <div id="resultado" aria-live="assertive" role="alert">
+        <!-- Resultado da verificação aparece aqui -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
